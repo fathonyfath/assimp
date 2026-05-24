@@ -46,6 +46,7 @@ pub fn build(b: *std.Build) !void {
     lib.root_module.addIncludePath(assimp.path("contrib/unzip"));
     lib.root_module.addIncludePath(assimp.path("contrib/zlib"));
     lib.root_module.addIncludePath(assimp.path("contrib/openddlparser/include"));
+    lib.root_module.addIncludePath(assimp.path("contrib/utf8cpp/source"));
 
     lib.root_module.addCMacro("RAPIDJSON_HAS_STDSTRING", "1");
 
